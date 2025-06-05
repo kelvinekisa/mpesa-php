@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     ];
     $url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
     $curl = curl_init($url);
-    curl_setopt($curl. CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_HTTPHEADER, [
         'Authorization: Bearer ' . $accessToken,
         'Content-Type: application/json'
